@@ -1,3 +1,2 @@
-# osf--week-6---felipe-miguel
+Felipe Miguel - week 6 projects
 
-osf week six projects
