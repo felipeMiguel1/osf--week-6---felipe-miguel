@@ -1,0 +1,19 @@
+
+<template>
+    <div class="weather-container">
+        <lightning-card class="weather-card" title="Weather Information">
+            <div class="slds-m-around_medium">
+                <lightning-input label="City" value={city} onchange={handleChange}></lightning-input>
+                <lightning-button class="input-button" label="Get Weather" onclick={getWeather}></lightning-button>
+            </div>
+            <template if:true={weatherData}>
+                <div class="weather-info">
+                    <p>City: {weatherData.name}</p>
+                    <p>Temperature: {temperatureInCelsius}°C</p>
+                    <p>Weather: {weatherDescription}</p>
+                    <img class="weather-icon" if:true={weatherIconUrl} src={weatherIconUrl} alt="Weather Icon" />
+                </div>
+            </template>
+        </lightning-card>
+    </div>
+</template>
