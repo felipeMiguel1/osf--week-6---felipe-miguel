@@ -7,6 +7,25 @@ the validation for only allow 1 primery contact and the primary phone and replic
 
 ![image](https://github.com/felipeMiguel1/osf--week-6---felipe-miguel/assets/116683605/2fe79fb5-9981-4d43-8c12-b54f36510b64)
 
+project 2 batch job
+for project 2 i did two apex classes, one do the schedule part and the other is all logic to select the amounts, create the email and send the email.  
+
+to schedule the job you go to the developer console and schedule them like the follow exemples
+
+// Daily at 10:00 AM
+System.schedule('DailyOpportunitySummaryBatchJob', '0 0 10 * * ?', new OpportunitySummaryScheduler());
+
+// Weekly (Friday at 1:00 PM)
+System.schedule('WeeklyOpportunitySummaryBatchJob', '0 0 13 ? * FRI', new OpportunitySummaryScheduler());
+
+// Monthly (Last Friday of the Month at 6:00 PM)
+System.schedule('MonthlyOpportunitySummaryBatchJob', '0 0 18 ? * 6L', new OpportunitySummaryScheduler());
+
+
+
+i had a problem with this project, the class current is sending the email only to my personal email and the email is empty
+![image](https://github.com/felipeMiguel1/osf--week-6---felipe-miguel/assets/116683605/eeba0c6b-ef56-4e61-9b00-7df1cbdbe838)
+but there are no code errors and the job runs whithout problems
 
 
 Project 3 lwc whit weather api
