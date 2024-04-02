@@ -39,8 +39,9 @@ for this project i did something different, i create the lwc to display the curr
 
 Project 4 VisualForce page
 
-In this project i created the visual force page and add it to an account custom butto call SetPrimary
+In this project i created the visual force page and add it to the custom buttom SetPrimary in the account object
 ![image](https://github.com/felipeMiguel1/osf--week-6---felipe-miguel/assets/116683605/f8ba99eb-a7d2-4400-b67b-3b1ff389c298)
+![image](https://github.com/felipeMiguel1/osf--week-6---felipe-miguel/assets/116683605/18a4892c-800e-4529-af19-0be19901a442)
 
 The visual force page uses the IsPrimary__c custom field crated in the other projects, in the page you can edit and save some account fields, search contacts by name and set a contact as primary (this button works by setting all contacts as not primary before updating the select contact as primary so ir works with the project 1 trigger).
 ![image](https://github.com/felipeMiguel1/osf--week-6---felipe-miguel/assets/116683605/60a898b5-207e-4939-84c2-c7e857566236)
