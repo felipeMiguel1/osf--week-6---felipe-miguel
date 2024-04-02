@@ -13,12 +13,15 @@ for project 2 i did two apex classes, one do the schedule part and the other is 
 to schedule the job you go to the developer console and schedule them like the follow exemples
 
 // Daily at 10:00 AM
+
 System.schedule('DailyOpportunitySummaryBatchJob', '0 0 10 * * ?', new OpportunitySummaryScheduler());
 
 // Weekly (Friday at 1:00 PM)
+
 System.schedule('WeeklyOpportunitySummaryBatchJob', '0 0 13 ? * FRI', new OpportunitySummaryScheduler());
 
 // Monthly (Last Friday of the Month at 6:00 PM)
+
 System.schedule('MonthlyOpportunitySummaryBatchJob', '0 0 18 ? * 6L', new OpportunitySummaryScheduler());
 
 
